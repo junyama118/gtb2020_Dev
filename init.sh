@@ -12,11 +12,11 @@ sudo cp -b -f ./setup/httpd/conf/httpd.conf /etc/httpd/conf/
 service httpd restart
 
 # logにアクセスする為に権限を付与する
-chown apache:apache /var/www/html/gtb2020-laravel/storage/logs/
+chown apache:apache /var/www/html/gtb2020_Dev/storage/logs/
 
 # gtb2020-laravelディレクトリの権限を変更する
-chmod -R 777 /var/www/html/gtb2020-laravel/storage
-chmod -R 777 /var/www/html/gtb2020-laravel/bootstrap/cache
+chmod -R 777 /var/www/html/gtb2020_Dev/storage
+chmod -R 777 /var/www/html/gtb2020_Dev/bootstrap/cache
 
 # APP KEYを生成させる
 php artisan key:generate
